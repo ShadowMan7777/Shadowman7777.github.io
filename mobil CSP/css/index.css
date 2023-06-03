@@ -1,0 +1,86 @@
+
+::selection{
+  color: #fff;
+  background:#56baed;
+}
+body{
+  background:#56baed;
+}
+.select-box, .play-board, .result-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.select-box{
+  background: #fff;
+  padding: 60px 55px 55px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+}
+.select-box.hide{
+  opacity: 0;
+  pointer-events: none;
+}
+.select-box header{
+  font-size: 23px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+.select-box .title{
+  font-size: 22px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.select-box .options{
+  display: flex;
+  width: 100%;
+}
+.options button{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 0;
+  border: none;
+  background: #56baed;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.options button:hover,
+.btn button:hover{
+  transform: scale(0.96);
+}
+.options button.playerX{
+  margin-right: 3px;
+}
+.options button.playerO{
+  margin-left: 3px;
+}
+.select-box .credit{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.select-box .credit a {
+  color: #56baed;
+  text-decoration: none;
+}
+
+
+
+
+
+span {
+  color: rgb(113, 113, 168);
+  display: inline-block;
+  padding: 5px;
+  background-color: #f1f1f1;
+}
+p {text-align: center;}

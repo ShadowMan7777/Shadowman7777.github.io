@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<h1> Metric to Imperial system </h1>
+<body style="background-color:#56baed;"></body>
+<link rel="stylesheet" href="/Css/metric.css">
+
+
+
+
+
+
+
+
+
+
+</head>
+
+  <div class="container">
+    <div>
+      <label for="mile-input">Enter distance in miles:</label>
+      <input type="number" id="mile-input" />
+      <button onclick="convertMilesToKilometers()">Convert</button>
+      <p id="mile-result"></p>
+    </div>
+    
+    <div>
+      <label for="yard-input">Enter length in yards:</label>
+      <input type="number" id="yard-input" />
+      <button onclick="convertYardsToMeters()">Convert</button>
+      <p id="yard-result"></p>
+    </div>
+    
+    <div>
+      <label for="inch-input">Enter length in inches:</label>
+      <input type="number" id="inch-input" />
+      <button onclick="convertInchesToMillimeters()">Convert</button>
+      <p id="inch-result"></p>
+    </div>
+    
+    <div>
+      <label for="foot-input">Enter length in feet:</label>
+      <input type="number" id="foot-input" />
+      <button onclick="convertFeetToCentimeters()">Convert</button>
+      <p id="foot-result"></p>
+    </div>
+    
+    <div>
+      <label for="pound-input">Enter weight in pounds:</label>
+      <input type="number" id="pound-input" />
+      <button onclick="convertPoundsToGrams()">Convert</button>
+      <p id="pound-result"></p>
+    </div>
+    
+    <div>
+      <label for="ounce-input">Enter weight in ounces:</label>
+      <input type="number" id="ounce-input" />
+      <button onclick="convertOuncesToMilligrams()">Convert</button>
+      <p id="ounce-result"></p>
+    </div>
+    
+    <div>
+      <label for="fahrenheit-input">Enter temperature in Fahrenheit:</label>
+      <input type="number" id="fahrenheit-input" />
+      <button onclick="convertFahrenheitToCelsius()">Convert</button>
+      <p id="fahrenheit-result"></p>
+    </div>
+    
+
+
+<script>
+function convertMilesToKilometers() {
+  var mileInput = document.getElementById("mile-input");
+  var miles = parseFloat(mileInput.value);
+
+  var kilometers = miles * 1.60934;
+
+  var mileResult = document.getElementById("mile-result");
+  mileResult.textContent = miles + " miles is equal to " + kilometers.toFixed(2) + " kilometers.";
+}
+
+function convertYardsToMeters() {
+  var yardInput = document.getElementById("yard-input");
+  var yards = parseFloat(yardInput.value);
+
+  var meters = yards / 1.09361;
+
+  var yardResult = document.getElementById("yard-result");
+  yardResult.textContent = yards + " yards is equal to " + meters.toFixed(2) + " meters.";
+}
+
+function convertInchesToMillimeters() {
+  var inchInput = document.getElementById("inch-input");
+  var inches = parseFloat(inchInput.value);
+
+  var millimeters = inches * 25.4;
+
+  var inchResult = document.getElementById("inch-result");
+  inchResult.textContent = inches + " inches is equal to " + millimeters.toFixed(2) + " millimeters.";
+}
+
+function convertFeetToCentimeters() {
+  var footInput = document.getElementById("foot-input");
+  var feet
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <p>Author: Ian Gifford<br>
+  <a href="8121101@Rochesterschools.org">8121101@RochesterSchools.org</a></p>
+</footer>
+</html>
